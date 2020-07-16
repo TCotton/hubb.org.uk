@@ -1,0 +1,19 @@
+{
+  "name": "hubb.org.uk",
+  "version": "1.0.0",
+  "description": "Website of mental health advocacy group hubb.org.uk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TCotton/hubb.org.uk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TCotton/hubb.org.uk/issues"
+  },
+  "homepage": "https://github.com/TCotton/hubb.org.uk#readme"
+}
