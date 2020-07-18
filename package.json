@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TCotton/hubb.org.uk/issues"
   },
-  "homepage": "https://github.com/TCotton/hubb.org.uk#readme"
+  "homepage": "https://github.com/TCotton/hubb.org.uk#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  }
 }
