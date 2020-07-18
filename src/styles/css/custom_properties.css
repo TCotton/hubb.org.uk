@@ -1,0 +1,22 @@
+:root {
+    --font-primary: 'Rubik', sans-serif;
+    --font-secondary: 'Kalam', cursive;
+    --ratio: 1.5;
+    --line-height: var(--ratio);
+    --line-height-small: calc(0.8 * var(--ratio));
+    --s-5: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
+    --s-4: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio));
+    --s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));
+    --s-2: calc(var(--s0) / var(--ratio) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s0) * var(--ratio) * var(--ratio));
+    --s3: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio));
+    --s4: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio));
+    --s5: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio));
+  }
+  ul {
+      list-style: none;
+  }
+  

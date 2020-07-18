@@ -14,7 +14,9 @@ module.exports = {
     port: 8080,
     publicPath: 'src',
     open: true, 
-    openPage: 'src/index.html' 
+    openPage: 'src/index.html',
+    inline: true,
+    hot: true
   },
 
   output: {
