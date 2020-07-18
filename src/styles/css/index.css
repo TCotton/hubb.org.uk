@@ -1,4 +1,17 @@
-@import 'custom_properties.css';
-@import 'reset.css';
-@import 'reusable_classes.css';
-@import 'core.css';
+@import "custom_properties.css";
+@import "reset.css";
+@import "reusable_classes.css";
+@import "core.css";
+
+body {
+  /* 62.5% */
+  /* > *:not(:first-child) */
+  /*
+      * + * {
+        margin-top: --var(--line-height);
+      }
+      */
+  font-size: var(--s0);
+  font-family: var(--font-primary);
+  line-height: var(--line-height);
+}

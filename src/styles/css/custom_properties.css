@@ -1,6 +1,6 @@
 :root {
-    --font-primary: 'Rubik', sans-serif;
-    --font-secondary: 'Kalam', cursive;
+    --font-primary: 'Prata', serif;
+    --font-secondary: 'Lato', cursive;
     --ratio: 1.5;
     --line-height: var(--ratio);
     --line-height-small: calc(0.8 * var(--ratio));
