@@ -33,6 +33,11 @@ h1 {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--border-color-dark);
 }
+@media (max-width: 940px) {
+    h1, h2 {
+        line-height: var(--line-height-small);
+    }
+}
 h2 {
   font-size: var(--s2);
   font-weight: 700;
@@ -58,9 +63,15 @@ p {
   font-weight: 400;
 }
 li {
-  margin-top: var(--s-5);
   font-family: var(--font-secondary);
   font-weight: 400;
+}
+nav li {
+    margin-top: var(--s-5);
+}
+main li {
+    font-size: 1.125rem;
+    line-height: var(--line-height-small);
 }
 .tagtitle {
   font-size: var(--s1);
@@ -113,5 +124,10 @@ section > ul {
 }
 main > footer {
     padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color-dark);
+}
+main > section {
+    padding-top: 0.5rem;
+    margin-top: 1.5em;
     border-top: 1px solid var(--border-color-dark);
 }
