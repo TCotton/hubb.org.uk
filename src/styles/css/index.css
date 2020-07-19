@@ -29,14 +29,22 @@ h6 {
 h1 {
   font-size: var(--s3);
   font-weight: 800;
-  -webkit-text-fill-color: white; 
+  -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--border-color-dark);
 }
-@media (max-width: 940px) {
-    h1, h2 {
-        line-height: var(--line-height-small);
-    }
+@media (max-width: 1200px) {
+  h1,
+  h2 {
+    line-height: var(--line-height-small);
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: var(--line-height-small);
+  }
 }
 h2 {
   font-size: var(--s2);
@@ -67,16 +75,21 @@ li {
   font-weight: 400;
 }
 nav li {
-    margin-top: var(--s-5);
+  margin-top: var(--s-5);
 }
 main li {
-    font-size: 1.125rem;
-    line-height: var(--line-height-small);
+  font-size: 1.125rem;
+  line-height: var(--line-height-small);
 }
 .tagtitle {
   font-size: var(--s1);
   font-style: italic;
   margin-top: var(--s-5);
+}
+@media (max-width: 1200px) {
+  .tagtitle {
+    margin-top: 1.5rem;
+  }
 }
 a:link {
   color: var(--base-colour);
@@ -107,27 +120,27 @@ address span {
   font-style: italic;
 }
 section > ul {
-    list-style-type: circle;
-    list-style-position: inside;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 .header-bottom {
-    padding: 0.5rem 0 1.5rem;
-    border-bottom: 3px solid var(--border-color-dark);
-    border-top: 3px solid var(--border-color-dark);
+  padding: 0.5rem 0 1.5rem;
+  border-bottom: 3px solid var(--border-color-dark);
+  border-top: 3px solid var(--border-color-dark);
 }
 .container > footer {
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color-dark);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color-dark);
 }
 .container > main {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 main > footer {
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border-color-dark);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color-dark);
 }
-main > section {
-    padding-top: 0.5rem;
-    margin-top: 1.5em;
-    border-top: 1px solid var(--border-color-dark);
+#main > section {
+  padding-top: 1rem;
+  margin-top: 1.5em;
+  border-top: 1px solid var(--border-color-dark);
 }
