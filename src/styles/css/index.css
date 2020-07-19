@@ -1,7 +1,7 @@
 @import "custom_properties.css";
 @import "reset.css";
 @import "reusable_classes.css";
-@import "core.css";
+@import "layout.css";
 
 body {
   font-size: var(--s0);
@@ -10,34 +10,68 @@ body {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+body * + * {
+    margin-top: 1.5rem;
+}
+  
 h1 {
-    font-size: var(--s4);
+  font-size: var(--s4);
 }
 h2 {
-    font-size: var(--s3);
+  font-size: var(--s3);
 }
 h3 {
-    font-size: var(--s2);
+  font-size: var(--s2);
 }
 h4 {
-    font-size: var(--s1);
+  font-size: var(--s1);
 }
 h5 {
-    font-size: var(--s1);
+  font-size: var(--s1);
 }
 h6 {
-    font-size: var(--s1);
+  font-size: var(--s1);
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    color: var(--base-colour);
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--base-colour);
 }
-p, li {
-    margin-top: var(--s-1);
-    font-family: var(--font-secondary);
+
+p,
+li {
+  margin-top: var(--s-1);
+  font-family: var(--font-secondary);
+}
+
+a:link {
+  color: var(--base-colour);
+  padding: var(--s-3);
+}
+a:visited {
+  color: var(--secondary-colour);
+}
+a:focus {
+  color: var(--tertiary-color);
+}
+a:hover {
+  color: var(--tertiary-color);
+  background: yellow;
+}
+a:active {
+  color: var(--tertiary-color);
+}
+
+.warning {
+  color: darkred;
 }

@@ -19,8 +19,12 @@
       href="https://fonts.googleapis.com/css?family=Lato%7CRoboto%7CMonserrat"
       rel="stylesheet"
     />
+
+    <script type="module" src="scripts/index.js"></script>
+    <script nomodule src="fscripts/index.js"></script>
     
     <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
+
     <title>Hubb - Home - About us</title>
   </head>
 
@@ -30,8 +34,11 @@
     <a class="visually-hidden" href="#main">Skip to content</a>
    
     <header>
-        <nav class="main_nav">
-          <ul>
+        <nav>
+          <span hidden id="menu-label">Main menu</span>
+          <button class="menu-toggle" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false">☰</button>
+
+          <ul class="menu" aria-labelledby="menu-label" id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="news.html">Latest news</a></li>
             <li><a href="members.html">Hubb members</a></li>
@@ -49,9 +56,8 @@
         </address>
 
         <div class="leftheader">
-          <h1>Hubb <span>support group</span></h1>
+          <h1>Hubb support group</h1>
           <p class="tagtitle">'Helping us bounce back'</p>
-          <br />
         </div>
         <div class="rightheader">
           <script async src="https://cse.google.com/cse.js?cx=008076670028902366462:mxjrfvhpaoi"></script>
