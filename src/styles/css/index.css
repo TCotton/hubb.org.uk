@@ -17,22 +17,28 @@ body * + * {
 }
 
 h1 {
-  font-size: var(--s4);
+  font-size: var(--s3);
+  font-weight: 800;
 }
 h2 {
-  font-size: var(--s3);
+  font-size: var(--s2);
+  font-weight: 700;
 }
 h3 {
-  font-size: var(--s2);
+  font-size: var(--s1);
+  font-weight: 700;
 }
 h4 {
   font-size: var(--s1);
+  font-weight: 700;
 }
 h5 {
   font-size: var(--s1);
+  font-weight: 700;
 }
 h6 {
   font-size: var(--s1);
+  font-weight: 700;
 }
 
 p,
@@ -44,17 +50,21 @@ h5,
 h6 {
   color: var(--base-colour);
 }
-
 p {
   margin-top: var(--s-1);
   font-family: var(--font-secondary);
+  font-weight: 400;
 }
-
 li {
   margin-top: var(--s-5);
   font-family: var(--font-secondary);
+  font-weight: 400;
 }
-
+.tagtitle {
+  font-size: var(--s1);
+  font-style: italic;
+  margin-top: var(--s-5);
+}
 a:link {
   color: var(--base-colour);
   padding: var(--s-3);
@@ -65,15 +75,24 @@ a:visited {
 a:focus {
   color: black;
   background: yellow;
+  outline: 2px dashed var(--focus-border);
 }
 a:hover {
   color: black;
   background: yellow;
+  outline: 2px dashed var(--focus-border);
 }
 a:active {
   color: var(--tertiary-color);
 }
-
+address span {
+  text-decoration: line-through;
+}
 .warning {
   color: darkred;
+  margin-top: var(--s-2);
+}
+section > ul {
+    list-style-type: circle;
+    list-style-position: inside;
 }

@@ -61,7 +61,7 @@ header nav ul li + li {
   .menu {
     display: grid;
     grid-template-columns: repeat(7, fit-content(120px));
-    grid-template-rows: 30px;
+    grid-template-rows: auto;
     grid-auto-flow: row;
     grid-gap: var(--s-3);
   }
@@ -105,5 +105,77 @@ header nav ul li + li {
 
   header nav ul li {
     display: block;
+  }
+}
+
+.header-bottom {
+  display: flow-root;
+}
+.leftheader {
+  float: left;
+  width: 50%;
+}
+.rightheader {
+  float: left;
+  width: 50%;
+}
+
+@supports (display: flex) {
+  .header-bottom {
+    display: flex;
+  }
+  .leftheader {
+    float: initial;
+    width: initial;
+    flex-basis: 50%;
+  }
+  .rightheader {
+    float: initial;
+    width: initial;
+    flex-basis: 50%;
+  }
+}
+
+@supports (display: grid) {
+  .header-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+  .leftheader {
+    float: initial;
+    width: initial;
+    flex-basis: initial;
+  }
+  .rightheader {
+    float: initial;
+    width: initial;
+    flex-basis: initial;
+  }
+}
+
+@media (max-width: 680px) {
+  .leftheader {
+    float: none;
+    width: 100%;
+  }
+  .rightheader {
+    float: none;
+    width: 100%;
+  }
+}
+
+@supports (display: flex) and (not (display: grid)) {
+  @media (max-width: 680px) {
+    .header-bottom {
+      flex-direction: column;
+    }
+    .leftheader {
+      flex-basis: 100%;
+      width: initial;
+    }
+    .rightheader {
+      flex-basis: 100%;
+      width: initial;
+    }
   }
 }
