@@ -35,7 +35,7 @@
     <a class="visually-hidden" href="#main">Skip to content</a>
    
     <header>
-        <nav>
+        <nav class="primary-nav">
           <span hidden id="menu-label">Main menu</span>
           <button class="menu-toggle" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false">☰</button>
 
@@ -46,7 +46,7 @@
             <li><a href="contact.html">Contact us</a></li>
             <li><a href="policies.html">Hubb policies</a></li>
             <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="links.html">Links</a></li>
+            <li><a href="links.html">Useful links</a></li>
           </ul>
         </nav>
 
@@ -70,9 +70,14 @@
 
     <main id="main">
 
-      <section>
+      <header>
         <h2>About Hubb support Group<br /></h2>
         <h3>Our Aims/Purpose</h3>
+      </header>
+
+      <div class="main-body">
+
+      <section>
         <ul>
           <li>
             A safe relaxed place for people to share their experiences at our
@@ -89,10 +94,10 @@
           </li>
         </ul>
 
-        <figure aria-label="Something here">
-          <img alt="man by window" src="images/man_by_window.jpg" />
-        </figure>
+      </section>
 
+      <section>
+        <img src="images/green-succulent-plant-with-brown-pot-1036372.jpg" alt="woman standing in dark corridor" />
       </section>
 
       <section>
@@ -115,33 +120,30 @@
           <li>Referral to advocacy if needed.</li>
         </ul>
   
-        <div class="donate">
-          <p class="donate">
+        <p class="donate">
             <a
               class="leetchi-widget-btn"
               href="http://www.leetchi.com/c/hubb-mental-health-support-group"
               ><img
                 alt="leetchi contribute button"
-                src="https://asset.leetchi.com/Content/Quenette/img/culture/en/view/wizard/embed-btn.png?v=cfd4929cf3414f55b98b7643cf1dfe9d" /></a
-            ><p>to our pot on Leetchi</p>
-          </p>
-
-          <figure aria-label="Something here">
-            <img alt="hubb logo" src="images/logo.jpg" />
-          </figure>
-          
-        </div>
+                src="https://asset.leetchi.com/Content/Quenette/img/culture/en/view/wizard/embed-btn.png?v=cfd4929cf3414f55b98b7643cf1dfe9d" />
+                to our pot on Leetchi - help fund the Hubb activities
+              </a>
+        </p>
       </section>
+
+    </div>
 
       <footer class="bottom">
         <h3>Our meetings</h3>
-        <p>
+        <p aria-ignore="true">
           Meetings are held every 1st Thursday of the month from 4-6 pm. Members
           socialise, listen to a talk or complete an activity, buffet and free
           raffles. Fees or charge 2.00 per session, to cover buffet costs and
           raffle prizes etc. Talks have been about activities, educational
           opportunities, benefits, housing and other topics.
         </p>
+        <p class="warning">Important notice! Meetings have been temporarily suspended due to cornonvirus</p>
         <p class="volunteer">
           <a href="contact.html">Want to Volunteer with Hubb? Click here</a>
         </p>
@@ -150,7 +152,8 @@
     </main>
 
     <footer>
-        <nav aria-label="Secondary">
+
+        <nav class="secondary-nav" aria-label="Secondary">
           <ul>
             <li><a href="http://www.hubb.org.uk/news.html">News</a></li>
             <li><a href="http://www.hubb.org.uk/members.html">Members</a></li>
@@ -162,7 +165,7 @@
             <li><a href="http://www.hubb.org.uk/sitemap.html">Sitemap</a></li>
           </ul>
         </nav>
-        <p>&copy; HUBB all Rights Reserved.</p>
+        <p class="copyright">&copy; HUBB all Rights Reserved. Photo by Elina Krima from Pexels</p>
     </footer>
 
   </div>

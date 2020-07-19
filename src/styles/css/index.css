@@ -10,15 +10,28 @@ body {
   font-size: var(--s0);
   font-family: var(--font-primary);
   line-height: var(--line-height);
+  background: #f7f7f7;
 }
 
 body * + * {
   margin-top: 1.5rem;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--base-colour);
+}
 h1 {
   font-size: var(--s3);
   font-weight: 800;
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--border-color-dark);
 }
 h2 {
   font-size: var(--s2);
@@ -40,18 +53,7 @@ h6 {
   font-size: var(--s1);
   font-weight: 700;
 }
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--base-colour);
-}
 p {
-  margin-top: var(--s-1);
   font-family: var(--font-secondary);
   font-weight: 400;
 }
@@ -91,8 +93,25 @@ address span {
 .warning {
   color: darkred;
   margin-top: var(--s-2);
+  font-style: italic;
 }
 section > ul {
     list-style-type: circle;
     list-style-position: inside;
+}
+.header-bottom {
+    padding: 0.5rem 0 1.5rem;
+    border-bottom: 3px solid var(--border-color-dark);
+    border-top: 3px solid var(--border-color-dark);
+}
+.container > footer {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color-dark);
+}
+.container > main {
+    margin-bottom: 1.5rem;
+}
+main > footer {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color-dark);
 }
