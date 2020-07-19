@@ -18,6 +18,8 @@
 
 .menu-toggle {
   font-size: 36px;
+  background: white;
+  border: var(--border-color-dark);
 }
 
 .menu a {
@@ -29,7 +31,7 @@
 }
 
 .menu-toggle:focus {
-  outline: 2px solid;
+  outline: 2px solid var(--focus-border);
 }
 
 header nav ul {
@@ -42,6 +44,27 @@ header nav ul li {
 
 header nav ul li + li {
   margin-left: var(--s-3);
+}
+
+@supports (display: flex) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--s-3);
+  }
+  header nav ul li + li {
+    margin-left: initial;
+  }
+}
+
+@supports (display: grid) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(7, fit-content(120px));
+    grid-template-rows: 30px;
+    grid-auto-flow: row;
+    grid-gap: var(--s-3);
+  }
 }
 
 /* media tablet landscape */
@@ -79,9 +102,8 @@ header nav ul li + li {
   header nav ul {
     text-align: center;
   }
-  
+
   header nav ul li {
     display: block;
   }
-
 }

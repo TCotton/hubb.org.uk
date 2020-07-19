@@ -21,6 +21,7 @@
     --quaternary-color: #365361;
     --border-color-dark: #537E94;
     --border-color-light: #C1D6E0;
+    --focus-border: var(--border-color-dark);
   }
   ul {
       list-style: none;
