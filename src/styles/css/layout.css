@@ -1,6 +1,6 @@
 .container {
   width: 1366px;
-  margin: var(--s-2);
+  margin: 0 var(--s-2) var(--s-2);
 }
 
 /* header */
