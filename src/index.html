@@ -21,8 +21,17 @@
       rel="stylesheet"
     />
 
+    <script type="module" src="components/header-component.js"></script>
+    <script nomodule src="components/header-component.js"></script>
+
+    <script type="module" src="components/primary-navigation.js"></script>
+    <script nomodule src="components/primary-navigation.js"></script>
+
+    <script type="module" src="components/secondary-navigation.js"></script>
+    <script nomodule src="omponents/secondary-navigation.js"></script>
+
     <script type="module" src="scripts/index.js"></script>
-    <script nomodule src="fscripts/index.js"></script>
+    <script nomodule src="scripts/index.js"></script>
 
     <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
 
@@ -34,27 +43,7 @@
       <a class="visually-hidden" href="#main">Skip to content</a>
 
       <header>
-        <nav class="primary-nav">
-          <span hidden id="menu-label">Main menu</span>
-          <button
-            class="menu-toggle"
-            id="menu-toggle"
-            aria-labelledby="menu-label"
-            aria-expanded="false"
-          >
-            ☰
-          </button>
-
-          <ul class="menu plain-list" aria-labelledby="menu-label" id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">Latest news</a></li>
-            <li><a href="members.html">Hubb members</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="policies.html">Hubb policies</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="links.html">Useful links</a></li>
-          </ul>
-        </nav>
+        <primary-navigation></primary-navigation>
 
         <address>
           <span aria-hidden="true"
@@ -68,19 +57,8 @@
           </div>
         </address>
 
-        <div class="header-bottom">
-          <div class="leftheader">
-            <h1>Hubb support group</h1>
-            <p class="tagtitle">'Helping us bounce back'</p>
-          </div>
-          <div class="rightheader">
-            <script
-              async
-              src="https://cse.google.com/cse.js?cx=008076670028902366462:mxjrfvhpaoi"
-            ></script>
-            <div class="gcse-search"></div>
-          </div>
-        </div>
+        <header-component></header-component>
+
       </header>
 
       <main id="main">
@@ -174,23 +152,7 @@
           </footer>
         </section>
       </main>
-
-      <footer>
-        <nav class="secondary-nav" aria-label="Secondary">
-          <ul>
-            <li><a href="news.html">Latest news</a></li>
-            <li><a href="members.html">Hubb members</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="policies.html">Hubb policies</a></li>
-            <li><a href="links.html">Useful links</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-          </ul>
-        </nav>
-        <p class="copyright">
-          &copy; HUBB all Rights Reserved. Thanks go to late Christine Maloney
-          for all her previous hard work on this site
-        </p>
-      </footer>
+      <secondary-navigation></secondary-navigation>
     </div>
   </body>
 </html>

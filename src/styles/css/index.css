@@ -124,7 +124,7 @@ section > ul {
   list-style-position: inside;
 }
 .header-bottom {
-  padding: 1.5rem 0 3rem;
+  padding: 1.5rem 0 2rem;
   border-bottom: 3px solid var(--border-color-dark);
   border-top: 3px solid var(--border-color-dark);
 }
