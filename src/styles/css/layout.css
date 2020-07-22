@@ -181,83 +181,85 @@ header nav ul li + li {
   }
 }
 
-main {
+/* two columns */
+
+main.three-columns {
   display: flow-root;
 }
-.main-body {
+.main-body.three-columns {
   display: flow-root;
 }
-main section {
+main.three-columns section {
   margin-top: 0;
 }
-main section:first-of-type {
+main.three-columns section:first-of-type {
   width: 38%;
   float: left;
 }
-main section:nth-of-type(2) {
+main.three-columns section:nth-of-type(2) {
   width: 16%;
   float: left;
   padding: 0 4%;
 }
 @media (max-width: 680px) {
-  .main-body * + * {
+  .main-body.three-columns * + * {
     margin-top: 1.5rem;
   }
 }
-main section:last-of-type {
+main.three-columns section:last-of-type {
   width: 40%;
   float: right;
 }
-main footer {
+main.three-columns footer {
   clear: both;
 }
-main footer p {
+main.three-columns footer p {
   text-decoration: line-through;
 }
-main footer p:last-of-type,
-main footer p.warning {
+main.three-columns footer p:last-of-type,
+main.three-columns footer p.warning {
   text-decoration: none;
 }
 
 @supports (display: flex) {
-  main {
+  main.three-columns {
     display: flex;
     flex-direction: column;
   }
-  .main-body {
+  .main-body.three-columns {
     display: flex;
     align-items: stretch;
     gap: 2%;
   }
-  main section:first-of-type {
+  main.three-columns section:first-of-type {
     flex-basis: 38%;
   }
-  main section:nth-of-type(2) {
+  main.three-columns section:nth-of-type(2) {
     flex-basis: 18%;
     padding: initial;
   }
-  main section:last-of-type {
+  main.three-columns section:last-of-type {
     flex-basis: 38%;
   }
 }
 
 @supports (display: flex) {
   @media (max-width: 680px) {
-    .main-body {
+    .main-body.three-columns {
       display: flex;
       align-items: normal;
       gap: 0;
       flex-direction: column;
     }
-    main section:first-of-type {
+    main.three-columns section:first-of-type {
       width: initial;
       flex-basis: auto;
     }
-    main section:nth-of-type(2) {
+    main.three-columns section:nth-of-type(2) {
       width: initial;
       flex-basis: auto;
     }
-    main section:last-of-type {
+    main.three-columns section:last-of-type {
       width: initial;
       flex-basis: auto;
     }
@@ -265,10 +267,10 @@ main footer p.warning {
 }
 
 @supports (display: grid) {
-  main {
+  main.three-columns {
     display: flow-root;
   }
-  .main-body {
+  .main-body.three-columns {
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
@@ -276,39 +278,39 @@ main footer p.warning {
     );
     grid-gap: 3%;
   }
-  main section:first-of-type {
+  main.three-columns section:first-of-type {
     width: auto;
   }
-  main section:nth-of-type(2) {
+  main.three-columns section:nth-of-type(2) {
     width: auto;
     padding: inherit;
   }
-  main section:last-of-type {
+  main.three-columns section:last-of-type {
     width: auto;
   }
-  main section:first-of-type {
+  main.three-columns section:first-of-type {
     flex-basis: initial;
   }
-  main section:nth-of-type(2) {
+  main.three-columns section:nth-of-type(2) {
     flex-basis: initial;
     padding: initial;
   }
-  main section:last-of-type {
+  main.three-columns section:last-of-type {
     flex-basis: initial;
   }
 }
 
 @supports (display: grid) {
   @media (max-width: 940px) {
-    .main-body {
+    .main-body.three-columns {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 0;
     }
-    .main-body * + * {
+    .main-body.three-columns * + * {
       margin-top: 1.5rem;
     }
-    main section:nth-of-type(2) img {
+    main.three-columns section:nth-of-type(2) img {
       width: 50%;
     }
   }
@@ -335,4 +337,21 @@ footer p.copyright {
 
 header-component, primary-navigation, secondary-navigation {
   display: block;
+}
+
+form.hubb-form label, form.hubb-form input {
+  display: block;
+}
+
+form.hubb-form input[type=text], form.hubb-form input[type=email] {
+  height: 3rem;
+  border: 1px solid var(--border-color-dark);
+  padding: var(--s-3);
+  margin-top: var(--s-4);
+}
+
+form.hubb-form input[type=submit] {
+  height: 3rem;
+  border: 1px solid var(--border-color-dark);
+  padding: var(--s-3);
 }

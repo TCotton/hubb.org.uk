@@ -56,8 +56,8 @@
         <header-component></header-component>
       </header>
 
-      <main id="main">
-        <div class="main-body">
+      <main id="main" class="two-columns">
+        <div class="main-body two-columns">
           <section>
             <h2>Hubb News</h2>
             <p>
@@ -73,60 +73,59 @@
 
             <h3>Newsletter Subscribe</h3>
 
-            <form action="https://formspree.io/xeqjkqeg" method="POST">
+            <form action="https://formspree.io/xeqjkqeg" method="POST" class="hubb-form">
+              <label for="name">Your full name</label>
               <input
                 name="name"
                 placeholder="Your full name"
                 size="42"
                 type="text"
+                id="name"
               />
+              <label for="email">Your email address</label>
               <input
                 name="_replyto"
                 placeholder="Your email"
                 size="42"
                 type="email"
+                id="email"
               />
               <input type="submit" value="Get our newsletter!" />
             </form>
 
-            <h4 class="news">Latest and older Newsletters</h4>
-            <div>
-              <table class="news">
-                <tr>
-                  <td>
-                    <a href="news/april_2019(April%202019%20Newsletter).pdf"
-                      >Apr 2019</a
-                    >
-                  </td>
-                  <td>
-                    <a href="news/May_2019(May%202019%20newsletter).pdf"
-                      >May 2019</a
-                    >
-                  </td>
-                  <td><a href="news/jun_news_2019.pdf">Jun 2019</a></td>
-                </tr>
-                <tr>
-                  <td><a href="news/jun_news_2019.pdf">Jul 2019</a></td>
-                  <td><a href="news/Aug_2019_news.pdf">Aug 2019</a></td>
-                  <td><a href="news/sep2019news.pdf">Sep 2019</a></td>
-                </tr>
-                <tr>
-                  <td><a href="news/octnews2019.pdf">Oct 2019</a></td>
-                  <td></td>
-                  <td style="font-size: smaller;">
-                    <figure>
-                      <img
-                        alt="mini pdf icon"
-                        src="images/pdf-icon-small.png"
-                      />
-                      <figcaption>.pdf files</figcaption>
-                    </figure>
-                  </td>
-                </tr>
-              </table>
-            </div>
+            <h4>Latest and older Newsletters</h4>
+            <table class="news">
+              <tr>
+                <td>
+                  <a href="news/april_2019(April%202019%20Newsletter).pdf"
+                    >Apr 2019</a
+                  >
+                </td>
+                <td>
+                  <a href="news/May_2019(May%202019%20newsletter).pdf"
+                    >May 2019</a
+                  >
+                </td>
+                <td><a href="news/jun_news_2019.pdf">Jun 2019</a></td>
+              </tr>
+              <tr>
+                <td><a href="news/jun_news_2019.pdf">Jul 2019</a></td>
+                <td><a href="news/Aug_2019_news.pdf">Aug 2019</a></td>
+                <td><a href="news/sep2019news.pdf">Sep 2019</a></td>
+              </tr>
+              <tr>
+                <td><a href="news/octnews2019.pdf">Oct 2019</a></td>
+                <td></td>
+                <td style="font-size: smaller;">
+                  <figure>
+                    <img alt="mini pdf icon" src="images/pdf-icon-small.png" />
+                    <figcaption>.pdf files</figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </table>
 
-            <h3>Memory of RACHEL MORRIS April 2019</h3>
+            <h5>Memory of RACHEL MORRIS April 2019</h5>
             <figure>
               <img
                 alt="One of our members Rachel with the Mayor Phillipa Chowder in Romford market for Hunn May 2017"
@@ -154,7 +153,7 @@
           </section>
 
           <section>
-            <h3>FREE Handyman Help!</h3>
+            <h6>FREE Handyman Help!</h6>
             <p>
               Do you need someone to carry out any of those minor but maddening
               repairs and maintenance that need doing at home? Are you a
@@ -168,10 +167,10 @@
               council.
             </p>
 
-            <h3>MENTAL HEALTH AWARENESS DAY Friday 17th May 2019</h3>
+            <h6>MENTAL HEALTH AWARENESS DAY Friday 17th May 2019</h6>
             <figure>
               <img
-                alt="michael &amp; dinah n duty"
+                alt="michael &amp; dinah on duty"
                 src="images/img3.jpg"
               /><br />
               <figcaption>Michael and Dinah on duty</figcaption>
@@ -192,14 +191,10 @@
               rare visitor! a couple of newcomers said they may join us next
               month.
             </p>
-            <p>News of Hubb support group previous years.</p>
-            <p>
-              <a href="news_2016_2017.html">&#9755; Older News 2016 - 2017 </a>
-            </p>
           </section>
         </div>
       </main>
-      <footer-component></footer-component>
+      <secondary-navigation></secondary-navigation>
     </div>
   </body>
 </html>
