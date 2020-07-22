@@ -144,3 +144,9 @@ main > footer {
   margin-top: 1.5em;
   border-top: 1px solid var(--border-color-dark);
 }
+figcaption {
+  margin-top: var(--s-4);
+}
+table.news td + td {
+  padding: var(--s-1);
+}

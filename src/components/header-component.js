@@ -1,13 +1,13 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `<div class="header-bottom">
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `<div class="header-bottom">
       <div class="leftheader">
         <h1>Hubb support group</h1>
-        <p class="tagtitle">'Helping us bounce back'</p>
+        <p class="tagtitle" role="doc-subtitle">'Helping us bounce back'</p>
       </div>
       <div class="rightheader">
         <script
@@ -17,7 +17,6 @@ class Header extends HTMLElement {
         <div class="gcse-search"></div>
       </div>
     </div>`;
-    }
-  
   }
-  customElements.define("header-component", Header);
+}
+customElements.define("header-component", Header);

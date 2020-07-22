@@ -22,6 +22,5 @@ class SecondaryNavigation extends HTMLElement {
   </footer>
 `;
   }
-
 }
 customElements.define("secondary-navigation", SecondaryNavigation);

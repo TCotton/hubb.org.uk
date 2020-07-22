@@ -27,6 +27,5 @@ class PrimaryNavigation extends HTMLElement {
   </nav>
 `;
   }
-
 }
 customElements.define("primary-navigation", PrimaryNavigation);

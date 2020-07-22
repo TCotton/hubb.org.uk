@@ -181,7 +181,7 @@ header nav ul li + li {
   }
 }
 
-/* two columns */
+/* three columns */
 
 main.three-columns {
   display: flow-root;
@@ -316,6 +316,89 @@ main.three-columns footer p.warning {
   }
 }
 
+/* two columns */
+
+main.two-columns {
+  display: flow-root;
+}
+.main-body.two-columns {
+  display: flow-root;
+}
+
+.main-body.two-columns section:first-of-type {
+  background: transparent;
+  width: 48%;
+  float: left;
+}
+.main-body.two-columns section:last-of-type {
+  background: transparent;
+  width: 48%;
+  float: left;
+  margin: 0 0 0 4%;
+}
+@media (max-width: 680px) {
+  .main-body.two-columns * + * {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 680px) {
+  .main-body.two-columns section:first-of-type {
+    float: none;
+    width: 100%;
+  }
+  .main-body.two-columns section:last-of-type {
+    float: none;
+    width: 100%;
+    margin: 1.5rem 0 0;
+  }
+  .header-bottom {
+    padding: inherit;
+  }
+}
+@supports (display: flex) {
+  .main-body.two-columns {
+    display: flex;
+    gap: 4%;
+    align-items: stretch;
+  }
+  .main-body.two-columns section:first-of-type {
+    background: transparent;
+    width: auto;
+    flex-basis: 48%;
+  }
+  .main-body.two-columns section:last-of-type {
+    background: transparent;
+    width: auto;
+    flex-basis: 48%;
+    margin: 0;
+  }
+}
+
+@supports (display: flex) {
+  @media (max-width: 680px) {
+    .main-body.two-columns {
+      flex-direction: column;
+    }
+    .main-body.two-columns section:first-of-type {
+      flex-basis: 100%;
+      width: initial;
+    }
+    .main-body.two-columns section:last-of-type {
+      flex-basis: 100%;
+      width: initial;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .main-body.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2%; 
+  }
+}
+
 .secondary-nav ul {
   display: flex;
   justify-content: flex-end;
@@ -335,23 +418,30 @@ footer p.copyright {
   }
 }
 
-header-component, primary-navigation, secondary-navigation {
+header-component,
+primary-navigation,
+secondary-navigation {
   display: block;
 }
-
-form.hubb-form label, form.hubb-form input {
+form.hubb-form label,
+form.hubb-form input {
   display: block;
 }
-
-form.hubb-form input[type=text], form.hubb-form input[type=email] {
+form.hubb-form input[type="text"],
+form.hubb-form input[type="email"] {
   height: 3rem;
   border: 1px solid var(--border-color-dark);
   padding: var(--s-3);
   margin-top: var(--s-4);
 }
-
-form.hubb-form input[type=submit] {
+form.hubb-form input[type="submit"] {
   height: 3rem;
   border: 1px solid var(--border-color-dark);
   padding: var(--s-3);
+  background: var(--secondary-colour);
+  color: white;
+}
+form.hubb-form input[type="submit"]:hover {
+  background: white;
+  color: var(--base-colour);
 }
