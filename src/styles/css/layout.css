@@ -340,6 +340,9 @@ main.two-columns {
   .main-body.two-columns * + * {
     margin-top: 1.5rem;
   }
+  main > footer {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 680px) {
   .main-body.two-columns section:first-of-type {
@@ -444,4 +447,31 @@ form.hubb-form input[type="submit"] {
 form.hubb-form input[type="submit"]:hover {
   background: white;
   color: var(--base-colour);
+}
+dl.members {
+  display: flex;
+  flex-flow: row wrap;
+}
+dl.members dt {
+  flex-basis: 20%;
+  padding: var(--s-3);
+  background: var(--secondary-colour);
+  color: white;
+  text-align: right;
+  color: #fff;
+ 
+}
+dl.members dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  padding: var(--s-3);
+  border-top: 1px solid var(--border-color-dark);
+  border-bottom: 1px solid var(--border-color-dark);
+  border-right: 1px solid var(--border-color-dark);
+}
+dl.members dd:first-of-type {
+  margin-top: 0;
+}
+ul.members li {
+  font-size: 1rem;
 }
