@@ -126,6 +126,9 @@ header nav ul li + li {
 
 .header-bottom {
   display: flow-root;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .leftheader {
   float: left;
@@ -379,7 +382,6 @@ main.two-columns {
   .main-body.two-columns {
     display: flex;
     gap: 4%;
-    align-items: stretch;
   }
   .main-body.two-columns section:first-of-type {
     background: transparent;
@@ -444,15 +446,20 @@ secondary-navigation {
   display: block;
 }
 form.hubb-form label,
-form.hubb-form input {
+form.hubb-form input,
+form.hubb-form textarea {
   display: block;
 }
 form.hubb-form input[type="text"],
-form.hubb-form input[type="email"] {
+form.hubb-form input[type="email"],
+form.hubb-form textarea {
   height: 3rem;
   border: 1px solid var(--border-color-dark);
   padding: var(--s-3);
   margin-top: var(--s-4);
+}
+form.hubb-form textarea {
+  min-height: 200px;
 }
 form.hubb-form input[type="submit"] {
   height: 3rem;
@@ -476,7 +483,6 @@ dl.members dt {
   color: white;
   text-align: right;
   color: #fff;
- 
 }
 dl.members dd {
   flex-basis: 70%;

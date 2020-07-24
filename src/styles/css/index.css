@@ -32,6 +32,7 @@ h1 {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--border-color-dark);
+  text-shadow: 4px 4px 1px #cccccc;
 }
 @media (max-width: 1200px) {
   h1,
@@ -97,6 +98,7 @@ a:link {
 }
 a:visited {
   color: var(--secondary-colour);
+  font-weight: 700;
 }
 a:focus {
   color: black;
@@ -125,8 +127,6 @@ section > ul {
 }
 .header-bottom {
   padding: 1.5rem 0 2.5rem;
-  border-bottom: 3px solid var(--border-color-dark);
-  border-top: 3px solid var(--border-color-dark);
 }
 .container > footer {
   padding-top: 1.5rem;
@@ -149,4 +149,39 @@ figcaption {
 }
 table.news td + td {
   padding: var(--s-1);
+}
+html, body {
+  overflow-x: hidden;
+}
+.full-width-bar {
+   /* also subtract section padding (1.5rem) */
+   position: relative;
+   /* add back section padding (1.5rem) */
+   background: white;
+   /* border has to be solid, not RGBa */
+   /* 9600px or equiv (600rem = 9600/16) */
+   border-bottom: 2px solid var(--border-color-dark);
+   border-top: 2px solid var(--border-color-dark);
+}
+.full-width-bar:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 9600px;
+  right: 100%;
+  background: white;
+  border-bottom: 2px solid var(--border-color-dark);
+  border-top: 2px solid var(--border-color-dark);
+}
+.full-width-bar:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 9600px;
+  left: 100%;
+  background: white;
+  border-bottom: 2px solid var(--border-color-dark);
+  border-top: 2px solid var(--border-color-dark);
 }
