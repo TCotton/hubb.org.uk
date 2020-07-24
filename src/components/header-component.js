@@ -8,12 +8,9 @@ class Header extends HTMLElement {
       <div class="leftheader">
         <h1>Hubb support group</h1>
         <p class="tagtitle" role="doc-subtitle">'Helping us bounce back'</p>
+        <img src="images/logo.png" alt="hub logo" class="hub-logo"/>
       </div>
       <div class="rightheader">
-        <script
-          async
-          src="https://cse.google.com/cse.js?cx=008076670028902366462:mxjrfvhpaoi"
-        ></script>
         <div class="gcse-search"></div>
       </div>
     </div>`;

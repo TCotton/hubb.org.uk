@@ -46,6 +46,21 @@ header nav ul li + li {
   margin-left: var(--s-3);
 }
 
+.leftheader {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hub-logo {
+  width: 30%;
+  justify-self: flex-start;
+  margin-top: 0;
+}
+
+.tagtitle {
+  margin-right: 3%;
+}
+
 @supports (display: flex) {
   .menu {
     display: flex;
@@ -134,6 +149,7 @@ header nav ul li + li {
     float: initial;
     width: initial;
     flex-basis: 50%;
+    padding: inherit;
   }
 }
 
@@ -141,6 +157,7 @@ header nav ul li + li {
   .header-bottom {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 2%;
   }
   .leftheader {
     float: initial;
@@ -474,4 +491,5 @@ dl.members dd:first-of-type {
 }
 ul.members li {
   font-size: 1rem;
+  margin-top: var(--s-1);
 }
