@@ -147,25 +147,70 @@ main > footer {
 figcaption {
   margin-top: var(--s-4);
 }
-table.news td + td {
-  padding: var(--s-1);
+table.news td {
+  padding: var(--s-1) var(--s-1) var(--s-1) 0;
 }
-table.policies td + td {
-  padding: var(--s-1);
+table.policies td {
+  padding: var(--s-1) var(--s-1) var(--s-1) 0;
 }
-html, body {
+@media (max-width: 680px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  table.news td {
+    padding: 0;
+  }
+  table.policies td {
+    padding: 0;
+  }
+}
+html,
+body {
   overflow-x: hidden;
 }
 .full-width-bar {
-   /* also subtract section padding (1.5rem) */
-   position: relative;
-   /* add back section padding (1.5rem) */
-   background: white;
-   background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
-   /* border has to be solid, not RGBa */
-   /* 9600px or equiv (600rem = 9600/16) */
-   border-bottom: 2px solid var(--border-color-dark);
-   border-top: 2px solid var(--border-color-dark);
+  /* also subtract section padding (1.5rem) */
+  position: relative;
+  /* add back section padding (1.5rem) */
+  background: white;
+  background-image: repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  /* border has to be solid, not RGBa */
+  /* 9600px or equiv (600rem = 9600/16) */
+  border-bottom: 2px solid var(--border-color-dark);
+  border-top: 2px solid var(--border-color-dark);
 }
 .full-width-bar:before {
   content: "";
@@ -175,7 +220,35 @@ html, body {
   width: 9600px;
   right: 100%;
   background: white;
-  background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  background-image: repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
   border-bottom: 2px solid var(--border-color-dark);
   border-top: 2px solid var(--border-color-dark);
 }
@@ -187,7 +260,35 @@ html, body {
   width: 9600px;
   left: 100%;
   background: white;
-  background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  background-image: repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.06) 0px,
+      hsla(196, 0%, 79%, 0.06) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(196, 0%, 79%, 0.09) 0px,
+      hsla(196, 0%, 79%, 0.09) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
   border-bottom: 2px solid var(--border-color-dark);
   border-top: 2px solid var(--border-color-dark);
 }
