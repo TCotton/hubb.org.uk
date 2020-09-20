@@ -2,205 +2,171 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
+    <meta content="Volunteering for Hubb support group" name="description" />
     <meta
-      content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=yes"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
       name="viewport"
     />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta content="true" name="HandheldFriendly" />
-    <meta
-      content="Volunteering for Hubb support group, own page"
-      name="description"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      content="Volunteering form, volunteering information, volunteering roles"
-      name="keywords"
-    />
-    <meta content="noarchive" name="robots" />
-    <link href="styles/style2.css" rel="stylesheet" />
-    <link href="styles/menu.css" rel="stylesheet" />
-    <link href="styles/layout1.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Lato%7CRoboto%7CMonserrat"
       rel="stylesheet"
     />
-    <script src="javascript/html5shiv.js"></script>
-    <noscript>Use of Javascript required</noscript>
+
+    <script type="module" src="components/header-component.js"></script>
+    <script nomodule src="components/header-component.js"></script>
+
+    <script type="module" src="components/primary-navigation.js"></script>
+    <script nomodule src="components/primary-navigation.js"></script>
+
+    <script type="module" src="components/secondary-navigation.js"></script>
+    <script nomodule src="omponents/secondary-navigation.js"></script>
+
+    <script type="module" src="scripts/index.js"></script>
+    <script nomodule src="scripts/index.js"></script>
+
+    <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
+
     <title>Volunteer for Hubb</title>
   </head>
+
   <body>
-    <div id="main">
-      <header id="banner">
-        <nav id="main_nav">
-          <ul>
-            <li><a href="http://www.hubb.org.uk/index.html">Home</a></li>
-            <li><a href="http://www.hubb.org.uk/news.html">News</a></li>
-            <li><a href="http://www.hubb.org.uk/contact.html">Contacts</a></li>
-            <li><a href="http://www.hubb.org.uk/members.html">Members</a></li>
-            <li><a href="http://www.hubb.org.uk/policies.html">Policies</a></li>
-            <li><a href="http://www.hubb.org.uk/links.html">Links</a></li>
-            <li class="active">
-              <a href="http://www.hubb.org.uk/volunteer.html">Volunteer</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="space">
-          Meeting Address: YMCA -The Lecture Room 29 Rush Green Road RM7 OPH
-          Times: 4.00pm - 6.00pm
-        </address>
-        <div id="leftheader">
-          <h1>Hubb <span>support group</span></h1>
-          <h5 class="tagtitle">&quot;Helping us bounce back&quot;</h5>
-        </div>
-        <div id="rightheader">
-          <div class="gcse-search">
-            <script
-              async
-              src="https://cse.google.com/cse.js?cx=007574033507639521083:vrddnzc5chy"
-            ></script>
+    <div class="container">
+      <a class="visually-hidden" href="#main">Skip to content</a>
+
+      <header>
+        <primary-navigation></primary-navigation>
+
+        <address>
+          <span aria-hidden="true"
+            >Meeting address: YMCA - The Lecture Room, 29 Rush Green Road, RM7
+            OPH <br />Times: 4.00pm - 6.00pm</span
+          >
+          <div class="warning">
+            Important notice! Meetings have been temporarily suspended due to
+            cornonvirus
           </div>
-        </div>
+        </address>
+
+        <header-component></header-component>
       </header>
-      <div class="firstsidewider">
-        <h2>Volunteering for Hubb</h2>
-        <p>
-          If you want to volunteer for Hubb and have/had or cared for someone
-          with mental ill health we have some opportunities.
-        </p>
-        <p>
-          We're totally self supporting and need more volunteers to help us. All
-          of our volunteers need to be members, the membership form is below.
-        </p>
-        <p>
-          For some of the tasks you will need to have access to a computer with
-          Microsoft Office and an email program installed. Communication is
-          mainly via email and telephone apart from the monthly and committee
-          meetings alongside any informal training required.
-        </p>
-      </div>
-      <div class="wide">
-        <h5 class="volunteering">Volunteering roles</h5>
-        <ul>
-          <li>
-            <div class="title3"><h4>Befrienders</h4></div>
+
+      <main id="main" class="two-columns">
+        <div class="main-body two-columns">
+          <section>
+            <h2>Volunteering for Hubb</h2>
             <p>
-              HUBB urgently needs support workers/befrienders with experience.
-              Our caseload of people who need befriending support is growing
-              especially for our more isolated clients. DBS check an advantage.
+              If you want to volunteer for Hubb and have/had or cared for
+              someone with mental ill health we have some opportunities.
             </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Driver/own wheels</h4></div>
             <p>
-              Duties - To help Hubb with fundraising and escorting more frail
-              members to meetings, current rate per mile paid in expenses. To
-              attend events we may go to . Would include helping out with
-              equipment.
+              We're totally self supporting and need more volunteers to help us.
+              All of our volunteers need to be members, the membership form is
+              below.
             </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Newsletter Editor</h4></div>
             <p>
-              Duties - To write a newsletter giving the monthly news of Hubb, to
-              research mental health and local news, to create a fun easy to
-              read newsletter folowing guidelines and along your own ideas.
+              For some of the tasks you will need to have access to a computer
+              with Microsoft Office and an email program installed.
+              Communication is mainly via email and telephone apart from the
+              monthly and committee meetings alongside any informal training
+              required.
             </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Trainer</h4></div>
-            <p>
-              We are looking for an experienced trainer. To provide life skills
-              lessons with IT, this includes helping people with the
-              internet/email/facebook etc.<br />To review members training
-              needs.
-            </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Marketing Editor</h4></div>
-            <p>
-              To create for Hubb marketing literature, logo, leaflets, business
-              cards, etc. Good design skills sought must have their own software
-              and be able to work from home. To advise on any marketing
-              opportunities for us.
-            </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Researcher</h4></div>
-            <p>
-              Duties - To research people suitable for presenting talks to
-              members, research for fundraising grants, other researching as and
-              when required.
-            </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Catering Assistant</h4></div>
-            <p>
-              Duties - Shopping and preparing food for the monthly meetings.
-              Displaying members refreshments on the night, clearing the tables
-              etc. Car would be an advantage.
-            </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Admin Assistant</h4></div>
-            <p>
-              Duties - To help the secretary, skills needed: email, word, excel,
-              communication skills
-            </p>
-          </li>
-          <li>
-            <div class="title2"><h4>Any other duties</h4></div>
-            <p>
-              We are committed to helping people with their experiences and if
-              there are any other roles you would like to do.
-              <a href="contact.html">Contact us</a> and we will see if we can
-              fit you in. For instance, we are always looking for leaflet and
-              poster distributors.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <table class="pols">
-        <tr>
-          <td>
-            Express an interest
-            <a href="http://www.hubb.org.uk/contact.html">here</a>
-          </td>
-          <td>
-            Volunteer membership form
-            <a href="pdf/hubb_membership_form_a.pdf">(print and post)</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Volunteer application form
-            <a href="pdf/hubb_volunteer_app_form_b.pdf"></a>(<a
-              href="pdf/hubb_volunteer_app_form_b.pdf"
-              >print and post</a
-            >)
-          </td>
-          <td><a href="pdf/hubb_volunteer_policy.pdf">Volunteer policy</a></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="pdf/guidelines_volunteers.pdf">Guidelines for vounteers</a>
-          </td>
-          <td>Post or email forms or bring to the next meeting</td>
-        </tr>
-      </table>
-      <br /><br />
-      <footer id="foobar">
-        <ul>
-          <li><a href="http://www.hubb.org.uk/index.html">Home</a></li>
-          <li><a href="http://www.hubb.org.uk/news.html">News</a></li>
-          <li><a href="http://www.hubb.org.uk/contact.html">Contacts</a></li>
-          <li><a href="http://www.hubb.org.uk/members.html">Members</a></li>
-          <li><a href="http://www.hubb.org.uk/policies.html">Policies</a></li>
-          <li><a href="http://www.hubb.org.uk/links.html">Useful Links</a></li>
-          <li><a href="http://www.hubb.org.uk/sitemap.html">Sitemap</a></li>
-          <li><a href="http://www.hubb.org.uk/volunteer.html">Volunteer</a></li>
-        </ul>
-        <p>&copy; HUBB all Rights Reserved.</p>
-      </footer>
+          </section>
+          <section />
+        </div>
+        <footer>
+          <h3>Volunteering roles</h3>
+          <dl class="volunteers">
+            <dt><span>Befrienders</span></dt>
+            <dd>
+              <p>
+                HUBB urgently needs support workers/befrienders with experience.
+                Our caseload of people who need befriending support is growing
+                especially for our more isolated clients. DBS check an
+                advantage.
+              </p>
+            </dd>
+            <dt>Driver/own wheels</dt>
+            <dd>
+              <p>
+                Duties - To help Hubb with fundraising and escorting more frail
+                members to meetings, current rate per mile paid in expenses. To
+                attend events we may go to . Would include helping out with
+                equipment.
+              </p>
+            </dd>
+            <dt>Newsletter Editor</dt>
+            <dd>
+              <p>
+                Duties - To write a newsletter giving the monthly news of Hubb,
+                to research mental health and local news, to create a fun easy
+                to read newsletter folowing guidelines and along your own ideas.
+              </p>
+            </dd>
+            <dt>Trainer</dt>
+            <dd>
+              <p>
+                We are looking for an experienced trainer. To provide life
+                skills lessons with IT, this includes helping people with the
+                internet/email/facebook etc. To review members training needs.
+              </p>
+            </dd>
+            <dt>Marketing Editor</dt>
+            <dd>
+              <p>
+                To create for Hubb marketing literature, logo, leaflets,
+                business cards, etc. Good design skills sought must have their
+                own software and be able to work from home. To advise on any
+                marketing opportunities for us.
+              </p>
+            </dd>
+            <dt>Researcher</dt>
+            <dd>
+              <p>
+                Duties - To research people suitable for presenting talks to
+                members, research for fundraising grants, other researching as
+                and when required.
+              </p>
+            </dd>
+            <dt>Catering Assistant</dt>
+            <dd>
+              <p>
+                Duties - Shopping and preparing food for the monthly meetings.
+                Displaying members refreshments on the night, clearing the
+                tables etc. Car would be an advantage.
+              </p>
+            </dd>
+            <dt>Admin Assistant</dt>
+            <dd>
+              <p>
+                Duties - To help the secretary, skills needed: email, word,
+                excel, communication skills
+              </p>
+            </dd>
+            <dt>Any other duties</dt>
+            <dd>
+              <p>
+                We are committed to helping people with their experiences and if
+                there are any other roles you would like to do.
+                <a href="contact.html">Contact us</a> and we will see if we can
+                fit you in. For instance, we are always looking for leaflet and
+                poster distributors.
+              </p>
+            </dd>
+          </dl>
+        </footer>
+      </main>
+      <secondary-navigation></secondary-navigation>
     </div>
+    <script
+      async
+      defer
+      src="https://cse.google.com/cse.js?cx=008076670028902366462:mxjrfvhpaoi"
+    ></script>
   </body>
 </html>

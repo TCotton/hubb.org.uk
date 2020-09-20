@@ -425,7 +425,7 @@ main.two-columns {
   .main-body.two-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 2%; 
+    grid-gap: 2%;
   }
 }
 
@@ -480,11 +480,13 @@ form.hubb-form input[type="submit"]:hover {
   background: white;
   color: var(--base-colour);
 }
-dl.members {
+dl.members,
+dl.volunteers {
   display: flex;
   flex-flow: row wrap;
 }
-dl.members dt {
+dl.members dt,
+dl.volunteers dt {
   flex-basis: 20%;
   padding: var(--s-3);
   background: var(--secondary-colour);
@@ -492,7 +494,13 @@ dl.members dt {
   text-align: right;
   color: #fff;
 }
-dl.members dd {
+dl.volunteers dt {
+  display: grid;
+  place-items: center;
+  font-size: var(--s1);
+}
+dl.members dd,
+dl.volunteers dd {
   flex-basis: 70%;
   flex-grow: 1;
   padding: var(--s-3);
@@ -500,7 +508,15 @@ dl.members dd {
   border-bottom: 1px solid var(--border-color-dark);
   border-right: 1px solid var(--border-color-dark);
 }
-dl.members dd:first-of-type {
+dl.volunteers dd {
+  padding: var(--s-1);
+}
+dl.volunteers dd p {
+  width: 75%;
+  font-size: var(--s1);
+}
+dl.members dd:first-of-type,
+dl.volunteers dd:first-of-type {
   margin-top: 0;
 }
 ul.members li {
@@ -508,15 +524,24 @@ ul.members li {
   margin-top: var(--s-1);
 }
 @media (max-width: 680px) {
-  dl.members {
+  dl.members,
+  dl.volunteers {
     display: flex;
     flex-flow: column;
   }
-  dl.members dt {
+  dl.members dt,
+  dl.volunteers dt {
     text-align: left;
   }
-  dl.members dd {
+  dl.members dd,
+  dl.volunteers dd {
     margin-top: 0;
     border-left: 1px solid var(--border-color-dark);
+  }
+  dl.volunteers dd p {
+    width: auto;
+  }
+  dl.volunteers dt {
+    display: inherit;
   }
 }
