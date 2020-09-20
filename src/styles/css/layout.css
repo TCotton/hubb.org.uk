@@ -159,7 +159,7 @@ header nav ul li + li {
 @supports (display: grid) {
   .header-bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 2%;
   }
   .leftheader {
@@ -171,6 +171,14 @@ header nav ul li + li {
     float: initial;
     width: initial;
     flex-basis: initial;
+  }
+}
+
+@supports (display: grid) {
+  @media (max-width: 680px) {
+    .header-bottom {
+      grid-template-columns: auto;
+    }
   }
 }
 
@@ -331,7 +339,7 @@ main.three-columns footer p.warning {
       margin-top: 1.5rem;
     }
     main.three-columns section:nth-of-type(2) img {
-      width: 50%;
+      width: 30%;
     }
   }
 }
@@ -498,4 +506,17 @@ dl.members dd:first-of-type {
 ul.members li {
   font-size: 1rem;
   margin-top: var(--s-1);
+}
+@media (max-width: 680px) {
+  dl.members {
+    display: flex;
+    flex-flow: column;
+  }
+  dl.members dt {
+    text-align: left;
+  }
+  dl.members dd {
+    margin-top: 0;
+    border-left: 1px solid var(--border-color-dark);
+  }
 }
