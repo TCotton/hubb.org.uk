@@ -1,6 +1,6 @@
-require("html-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
@@ -35,7 +35,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|pdf|jpe?g|gif|jpg)$/i,
         use: [
           {
             loader: "file-loader",
@@ -52,6 +52,9 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "src/pdf", to: "public_html/pdf" }],
     }),
   ],
 };
