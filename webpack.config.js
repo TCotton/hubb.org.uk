@@ -18,16 +18,29 @@ module.exports = {
     hot: true,
   },
 
+  entry: "./src/scripts/index.js",
   output: {
     publicPath: "./src",
-    path: path.resolve(__dirname, "./src"),
+    path: __dirname + "/public_html",
+    filename: "index.js",
   },
-
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
       },
     ],
   },
