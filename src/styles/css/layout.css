@@ -467,6 +467,7 @@ form.hubb-form textarea {
 }
 form.hubb-form textarea {
   min-height: 200px;
+  padding: var(--s-1) var(--s-3);
 }
 form.hubb-form input[type="submit"] {
   height: 3rem;

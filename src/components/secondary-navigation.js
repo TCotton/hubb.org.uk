@@ -16,7 +16,7 @@ class SecondaryNavigation extends HTMLElement {
       </ul>
     </nav>
     <p class="copyright">
-      &copy; HUBB all Rights Reserved. Thanks go to late Christine Maloney
+      &copy; HUBB all Rights Reserved. Thanks go to the late Christine Maloney
       for all her previous hard work on this site
     </p>
   </footer>
