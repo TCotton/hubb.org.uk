@@ -18,6 +18,10 @@ module.exports = {
     hot: true,
   },
 
+  externals : {
+    HTMLElement: 'HTMLElement',
+  },
+
   entry: "./src/scripts/index.js",
   output: {
     publicPath: "./src",

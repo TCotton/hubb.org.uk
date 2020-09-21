@@ -2,59 +2,81 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
+    <meta content="Thank you from the Hubb" name="description" />
     <meta
-      content="Acknowledgement of php subscription for Hubb mental health support group,"
-      name="keywords"
-    />
-    <meta content="Hubb mental health subscribe thanks" name="description" />
-    <meta
-      content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
       name="viewport"
     />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta content="true" name="HandheldFriendly" />
-    <link href="styles/layout1.css" rel="stylesheet" type="text/css" />
-    <link href="styles/style2.css" rel="stylesheet" type="text/css" />
-    <link href="styles/menu.css" rel="stylesheet" type="text/css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato%7CRoboto%7CMonserrat"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <title>Newsletter thankyou</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="components/header-component.js"></script>
+    <script nomodule src="components/header-component.js"></script>
+
+    <script type="module" src="components/primary-navigation.js"></script>
+    <script nomodule src="components/primary-navigation.js"></script>
+
+    <script type="module" src="components/secondary-navigation.js"></script>
+    <script nomodule src="components/secondary-navigation.js"></script>
+
+    <script type="module" src="scripts/index.js"></script>
+    <script nomodule src="scripts/index.js"></script>
+
+    <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
+
+    <title>Thank you from the Hubb</title>
   </head>
   <body>
-    <div id="main">
-      <header id="banner">
-        <nav id="main_nav">
-          <ul>
-            <li><a href="http://www.hubb.org.uk/index.html">Home</a></li>
-            <li><a href="http://www.hubb.org.uk/contact.html">Contacts</a></li>
-            <li><a href="http://www.hubb.org.uk/members.html">Members</a></li>
-            <li><a href="http://www.hubb.org.uk/policies.html">Policies</a></li>
-            <li>
-              <a href="http://www.hubb.org.uk/volunteer.html">Volunteer</a>
-            </li>
-            <li><a href="http://www.hubb.org.uk/links.html">Links</a></li>
-            <li><a href="http://www.hubb.org.uk/thankyou.html">Thanks</a></li>
-          </ul>
-        </nav>
-        <div id="leftheader">
-          <h1>Hubb <span>support group</span></h1>
-          <h5 class="tagtitle">&quot;Helping us bounce back&quot;</h5>
-        </div>
-        <div id="rightheader">
-          <div class="gcse-search">
-            <script
-              async=""
-              src="https://cse.google.com/cse.js?cx=009081135371746014830:xl4xfexq8pq"
-            ></script>
+    <div class="container">
+      <a class="visually-hidden" href="#main">Skip to content</a>
+
+      <header>
+        <primary-navigation></primary-navigation>
+
+        <address>
+          <span aria-hidden="true"
+            >Meeting address: YMCA - The Lecture Room, 29 Rush Green Road, RM7
+            OPH <br />
+            Times: 4.00pm - 6.00pm</span
+          >
+          <div class="warning">
+            Important notice! Meetings have been temporarily suspended due to
+            cornonvirus
           </div>
-        </div>
+        </address>
+
+        <header-component></header-component>
       </header>
-      <div id="firstside">
-        <h2>Thank you</h2>
-        <p>For your contact. Be in touch soon.</p>
-      </div>
+
+      <main id="main" class="two-columns">
+        <div class="main-body two-columns">
+          <section>
+            <h2>Thank you</h2>
+            <p>For your contact. Be in touch soon.</p>
+          </section>
+          <section />
+        </div>
+        <footer />
+      </main>
+      <secondary-navigation></secondary-navigation>
     </div>
   </body>
+  <script
+    async
+    defer
+    src="https://cse.google.com/cse.js?cx=008076670028902366462:mxjrfvhpaoi"
+  ></script>
 </html>

@@ -1,0 +1,118 @@
+/* selected link */
+
+.hide {
+	display: none;
+}
+
+/* clearfix */
+
+.clearfix::before,
+.clearfix::after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix::after {
+	clear: both;
+}
+
+.display_flow_root {
+	display: flow-root;
+}
+
+.flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* new aspect ration techniques here using Grid and SVG:
+ https://justmarkup.com/log/2018/03/collection-of-css-snippets
+ https://codeburst.io/keeping-aspect-ratio-with-html-and-no-padding-tricks-40705656808b */
+.old_aspect_ratio.video_wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.old_aspect_ratio.video_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.new_aspect_ratio {
+  aspect-ratio: 16 / 9;
+}
+
+.ellipsis {
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.truncated {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 15rem;
+}
+
+.super_centered {
+  display: grid;
+  place-items: center;
+}
+
+.pancake_stack {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.multiline_truncates {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939 */
+.visually_hidden {
+    color: #fff;
+    background: #000;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 4px; 
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+}
+
+.visually_hidden:focus {
+    top: 2rem;
+    outline: 5px solid rgba(0,0,0,0.1);
+}
+
+/* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+.plain_list {
+  list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
+  padding-left: 0;
+}
+
