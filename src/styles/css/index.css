@@ -48,24 +48,34 @@ h1 {
   }
 }
 h2 {
+  font-family: var(--alternative-header);
   font-size: var(--s2);
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--quaternary-color);
 }
 h3 {
+  font-family: var(--alternative-header);
   font-size: var(--s1);
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--quaternary-color);
 }
 h4 {
+  font-family: var(--alternative-header);
   font-size: var(--s1);
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--quaternary-color);
 }
 h5 {
+  font-family: var(--alternative-header);
   font-size: var(--s1);
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--quaternary-color);
 }
 h6 {
+  font-family: var(--alternative-header);
   font-size: var(--s1);
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--quaternary-color);
 }
 p {
   font-family: var(--font-secondary);

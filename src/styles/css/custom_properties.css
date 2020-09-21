@@ -1,6 +1,7 @@
 :root {
     --font-primary: 'Raleway', sans-serif;
-    --font-secondary: 'Lato', cursive;
+    --alternative-header: 'lobster', cursive;
+    --font-secondary: 'Lato', sans-serif;
     --ratio: 1.5;
     --line-height: var(--ratio);
     --line-height-small: calc(0.8 * var(--ratio));
