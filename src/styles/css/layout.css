@@ -18,8 +18,8 @@
 
 .menu-toggle {
   font-size: 36px;
-  background: white;
-  border: var(--border-color-dark);
+  background: transparent;
+  border: 2px solid var(--border-color-dark);
 }
 
 .menu a {
@@ -103,6 +103,7 @@ header nav ul li + li {
   }
 
   .menu-toggle {
+    margin-top: 0;
     display: inline-block;
   }
 
