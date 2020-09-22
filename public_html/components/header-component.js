@@ -8,7 +8,7 @@ class Header extends HTMLElement {
     <div class="header-bottom">
       <div class="leftheader">
         <h1>Hubb support group</h1>
-        <p class="tagtitle" role="doc-subtitle">'Helping Us Bounce Back'</p>
+        <p class="tagtitle" role="doc-subtitle">'Helping Users Bounce Back'</p>
         <img src="images/logo.png" alt="hub logo" class="hub-logo"/>
       </div>
       <div class="rightheader">

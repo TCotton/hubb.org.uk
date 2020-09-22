@@ -1,8 +1,3 @@
-@import "custom_properties.css";
-@import "reset.css";
-@import "reusable_classes.css";
-@import "layout.css";
-
 body {
   display: flex;
   justify-content: center;
