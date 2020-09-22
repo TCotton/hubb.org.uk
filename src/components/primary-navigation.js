@@ -11,7 +11,7 @@ class PrimaryNavigation extends HTMLElement {
       id="menu-toggle"
       aria-labelledby="menu-label"
       aria-expanded="false"
-    >
+    ><span>Menu</span>
       ☰
     </button>
 

@@ -22,6 +22,11 @@
   border: 2px solid var(--border-color-dark);
 }
 
+.menu-toggle span {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
 .menu a {
   display: block;
 }
