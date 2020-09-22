@@ -5,6 +5,9 @@ RewriteBase /
 # redirect html pages to the root domain
 RewriteRule ^index\.html$ / [NC,R,L]
 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # BEGIN Expire headers  
 <IfModule mod_expires.c>  
   # Turn on the module.
