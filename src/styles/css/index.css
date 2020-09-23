@@ -94,6 +94,8 @@ main li {
   font-size: var(--s1);
   font-style: italic;
   margin-top: var(--s-5);
+  font-family: var(--alternative-header);
+  color: var(--border-color-dark);
 }
 @media (max-width: 1200px) {
   .tagtitle {

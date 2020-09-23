@@ -1,5 +1,6 @@
 .container {
-  width: 1366px;
+  width: 90%;
+  max-width: 1366px;
   margin: 0 var(--s-2) var(--s-2);
 }
 
