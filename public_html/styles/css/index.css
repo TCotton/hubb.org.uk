@@ -27,7 +27,7 @@ h1 {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--border-color-dark);
-  text-shadow: 4px 4px 1px #cccccc;
+  text-shadow: 1px 6px 1px #cccccc;
 }
 h2, h3, h4, h5, h6 {
   text-transform: capitalize
@@ -94,6 +94,9 @@ main li {
   font-size: var(--s1);
   font-style: italic;
   margin-top: var(--s-5);
+  font-family: var(--alternative-header);
+  color: var(--border-color-dark);
+  text-shadow: 1px 3px 2px #cccccc;
 }
 @media (max-width: 1200px) {
   .tagtitle {

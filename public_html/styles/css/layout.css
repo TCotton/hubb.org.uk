@@ -1,5 +1,6 @@
 .container {
-  width: 1366px;
+  width: 90%;
+  max-width: 1366px;
   margin: 0 var(--s-2) var(--s-2);
 }
 
@@ -59,6 +60,10 @@ header nav ul li + li {
 .hub-logo {
   justify-self: flex-start;
   margin-top: 0;
+  filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.4));
+  filter: grayscale(40%);
+  width: 160px;
+  height: 167px;
 }
 
 .tagtitle {
