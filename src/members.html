@@ -22,6 +22,12 @@
       rel="stylesheet"
     />
 
+    <script type="module" src="components/meeting-top.js"></script>
+    <script nomodule src="components/meeting-top.js"></script>
+
+    <script type="module" src="components/meetings-bottom.js"></script>
+    <script nomodule src="components/meetings-bottom.js"></script>
+
     <script type="module" src="components/header-component.js"></script>
     <script nomodule src="components/header-component.js"></script>
 
@@ -61,18 +67,7 @@
 
       <header>
         <primary-navigation></primary-navigation>
-
-        <address>
-          <span aria-hidden="true"
-            >Meeting address: YMCA - The Lecture Room, 29 Rush Green Road, RM7
-            OPH <br />Times: 4.00pm - 6.00pm</span
-          >
-          <div class="warning">
-            Important notice! Meetings have been temporarily suspended due to
-            cornonvirus
-          </div>
-        </address>
-
+        <meeting-top></meeting-top>
         <header-component></header-component>
       </header>
 

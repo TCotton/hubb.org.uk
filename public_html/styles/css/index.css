@@ -124,6 +124,9 @@ a:hover {
 a:active {
   color: var(--tertiary-color);
 }
+address {
+  margin-top: 1.5rem;
+}
 address span {
   text-decoration: line-through;
 }

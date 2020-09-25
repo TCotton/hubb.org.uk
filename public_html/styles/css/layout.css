@@ -66,6 +66,12 @@ header nav ul li + li {
   height: 167px;
 }
 
+@media (max-width: 680px) {
+  .hub-logo {
+    margin-top: 1.5rem;
+  }
+}
+
 .tagtitle {
   margin-right: 3%;
 }
@@ -379,7 +385,7 @@ main.two-columns {
     margin-top: 1.5rem;
   }
   main > footer {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 680px) {

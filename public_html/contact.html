@@ -23,6 +23,12 @@
       rel="stylesheet"
     />
 
+    <script type="module" src="components/meeting-top.js"></script>
+    <script nomodule src="components/meeting-top.js"></script>
+
+    <script type="module" src="components/meetings-bottom.js"></script>
+    <script nomodule src="components/meetings-bottom.js"></script>
+
     <script type="module" src="components/header-component.js"></script>
     <script nomodule src="components/header-component.js"></script>
 
@@ -57,19 +63,7 @@
 
       <header>
         <primary-navigation></primary-navigation>
-
-        <address>
-          <span aria-hidden="true"
-            >Meeting address: YMCA - The Lecture Room, 29 Rush Green Road, RM7
-            OPH <br />
-            Times: 4.00pm - 6.00pm</span
-          >
-          <div class="warning">
-            Important notice! Meetings have been temporarily suspended due to
-            cornonvirus
-          </div>
-        </address>
-
+        <meeting-top></meeting-top>
         <header-component></header-component>
       </header>
 
@@ -77,7 +71,60 @@
         <div class="main-body two-columns">
           <section>
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:djwbset@ntlworld.com">djwbset@ntlworld.com</a></p>
+            <h3>Contact Form</h3>
+            <div id="form">
+              <form
+                id="contact"
+                action="https://formspree.io/xdonzzga"
+                method="post"
+                class="hubb-form"
+              >
+                <label for="name">Your full name</label>
+                <input
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                  size="29"
+                  id="name"
+                  type="text"
+                />
+
+                <label for="_replyto">Your email address</label>
+                <input
+                  required
+                  name="_replyto"
+                  placeholder="Your email address"
+                  size="29"
+                  id="_replyto"
+                  type="email"
+                />
+
+                <label for="message">Type your message here</label>
+                <textarea
+                  required
+                  name="message"
+                  placeholder="Type your message here"
+                  id="message"
+                ></textarea>
+                <input
+                  required
+                  class="button"
+                  name="submit"
+                  type="submit"
+                  value="Send us a message"
+                /><input
+                  required
+                  class="button"
+                  name="next"
+                  type="hidden"
+                  value="https://www.hubb.org.uk/thankyou.html"
+                />
+              </form>
+            </div>
+            <p>
+              Email:
+              <a href="mailto:djwbset@ntlworld.com">djwbset@ntlworld.com</a>
+            </p>
             <p>&#9743; Phone the Secretary 07985 983673</p>
           </section>
           <section>
@@ -96,7 +143,12 @@
             </figure>
           </section>
         </div>
-        <footer />
+        <footer class="bottom">
+          <meeting-bottom></meeting-bottom>
+          <p class="volunteer">
+            <a href="contact.html">Want to Volunteer with Hubb? Click here</a>
+          </p>
+        </footer>
       </main>
       <secondary-navigation></secondary-navigation>
     </div>
