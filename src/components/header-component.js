@@ -7,7 +7,7 @@ class Header extends HTMLElement {
     this.innerHTML = `<div class="full-width-bar">
     <div class="header-bottom">
       <div class="leftheader">
-        <h1>HUBB support group</h1>
+        <h1>HUBB mental health support group</h1>
         <p class="tagtitle" role="doc-subtitle">Helping Us Bounce Back</p>
         <img src="images/hubb-logo.png" alt="hub logo" class="hub-logo"/>
       </div>
