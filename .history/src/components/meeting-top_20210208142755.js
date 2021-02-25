@@ -5,9 +5,7 @@ class MeetingTop extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `<address>
-      Meeting address: Hub cafe, 11 Gubbins Lane, Harold Wood, Romford RM3 0QA
-      <br />
-      Time: 4.30pm - 6.30pm
+      Next meeting: Venue to be confirmed
     </address>`;
     }
   }

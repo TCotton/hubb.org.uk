@@ -157,16 +157,13 @@ main > footer {
   padding-top: 1rem;
   margin-top: 1.5em;
   border-top: 1px solid var(--border-color-dark);
-  width: 100%;
+  width: calc(100vw - var(--s-2) - var(--s-2))
 }
 figcaption {
   margin-top: var(--s-4);
 }
 table.news td {
-  padding: var(--s1) var(--s-1) var(--s-1) 0;
-}
-table.news td a {
-  padding: var(--s-1);
+  padding: var(--s-1) var(--s-1) var(--s-1) 0;
 }
 table.policies td {
   padding: var(--s-1) var(--s-1) var(--s-1) 0;

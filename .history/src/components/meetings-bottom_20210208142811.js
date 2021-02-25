@@ -5,7 +5,7 @@ class MeetingBottom extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `<h3 class="meeting-bottom">Our meetings</h3><p>
-      Venue to be confirmed.
+      Next meeting: Venue to be confirmed.
     </p>`;
     }
   }
