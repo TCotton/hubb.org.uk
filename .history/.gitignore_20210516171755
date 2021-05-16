@@ -15,7 +15,8 @@
 
 # Mono auto generated files
 mono_crash.*
-
+ .DS_Store
+ .history/*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -348,8 +349,3 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-
- .DS_Store
- .history/*
- .history/
-  .history
